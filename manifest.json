@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "SPOT Grade Calculator",
+    "version": "1.0",
+    "description": "Calculates grades on SPOT.",
+    "permissions": ["scripting"],
+    "content_scripts": [
+      {
+        "matches": ["https://studentnet.cs.manchester.ac.uk/*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  
